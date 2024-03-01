@@ -6,11 +6,81 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="flex-container">
-        <div class="sidebar"></div>
-        <header></header>
+        <div class="sidebar">
+            <div class="sidebar-btn dashboard">
+                <img src="resources/icons/dashboard.svg" alt="icon">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="sidebar-btn home">
+                <img src="resources/icons/home.svg" alt="icon">
+                <h2>Home</h2>
+            </div>
+            <div class="sidebar-btn profile">
+                <img src="resources/icons/profile.svg" alt="icon">
+                <h2>Profile</h2>
+            </div>
+            <div class="sidebar-btn messages">
+                <img src="resources/icons/messages.svg" alt="icon">
+                <h2>Messages</h2>
+            </div>
+            <div class="sidebar-btn history">
+                <img src="resources/icons/history.svg" alt="icon">
+                <h2>History</h2>
+            </div>
+            <div class="sidebar-btn tasks">
+                <img src="resources/icons/tasks.svg" alt="icon">
+                <h2>Tasks</h2>
+            </div>
+            <div class="sidebar-btn communities">
+                <img src="resources/icons/communities.svg" alt="icon">
+                <h2>Communities</h2>
+            </div>
+            <div class="sidebar-btn empty"></div>
+            <div class="sidebar-btn settings">
+                <img src="resources/icons/settings.svg" alt="icon">
+                <h2>Settings</h2>
+            </div>
+            <div class="sidebar-btn support">
+                <img src="resources/icons/support.svg" alt="icon">
+                <h2>Support</h2>
+            </div>
+            <div class="sidebar-btn privacy">
+                <img src="resources/icons/privacy.svg" alt="icon" >
+                <h2>Privacy</h2>
+            </div>
+        </div>
+        <header>
+            <div class="header-top">
+                <img class="icon" src="resources/icons/search.svg" alt="icon">
+                <input class="searchbar" type="text" placeholder="">
+                <div class="empty"></div>
+                <img class="icon" src="resources/icons/notification.svg" alt="icon">
+                <div class="profile-pic">
+                    <img src="resources/images/profilepic.png" alt="icon">
+                </div>
+                <h3 class="profile-name">Victor Reyes</h3> 
+            </div>
+            <div class="header-bottom">
+                <div class="profile-pic">
+                    <img src="resources/images/profilepic.png" alt="icon">
+                </div>
+                <div class="welcome-username">
+                    <h4>Hi there,</h4>
+                    <h1>Victor Reyes (@reyesvictor1)</h1>
+                </div>
+                <div class="header-btns">
+                    <button class="new" type="button">New</button>
+                    <button class="upload" type="button">Upload</button>
+                    <button class="share" type="button">Share</button>
+                </div>
+            </div>
+        </header>
         <main></main>
     </div>  
 </body>
