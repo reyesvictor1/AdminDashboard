@@ -5,6 +5,7 @@ html, body {
 
 :root {
     --sidebar-color: lightseagreen;
+    --lightgray-color: rgb(235, 225, 225);
 }
 
 * {
@@ -45,9 +46,125 @@ header {
 }
 
 main {
-    background-color: lightgray;
+    background-color: var(--lightgray-color);
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+}
+
+main > div {
+    padding: 20px;
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 95%;
+    overflow: auto;
+}
+
+.others-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 15px;
+    padding-bottom: 10%;
+}
+
+.announcements-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;  
+}
+
+.trending-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 8px 4px 4px gray;
+    padding: 10px;
+    min-height: 80%;
+}
+
+.description {
+    overflow: auto;
+}
+
+.project-cards > .card {
+    border-left: 10px solid orange;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+    gap: 5px;
+}
+
+.card-btns {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    min-height: 100%;
+    margin-left: 20%;
+}
+
+.card-btn:hover {
+    cursor: pointer;
+}
+
+.announcements-section > .card {
+    display: grid;
+    font-size: 60%;
+    padding: 5% 10%;
+    overflow: auto;
+    text-align: justify;
+}
+
+.announcement {
+    padding: 5% 0;
+    border-bottom: 1px solid gray;
+}
+
+.trending-section > .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 25%);
+    padding: 5% 10%;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.trending > .profile-pic {
+    border: 2px solid black;
+    box-shadow: none;
+    height: 70%;
+    width: 70%;
+}
+
+.user-name, .title {
+    text-transform: capitalize;
 }
 
 .sidebar-btn {
@@ -80,6 +197,7 @@ main {
 .header-top {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
     gap: 10px;
@@ -89,22 +207,25 @@ main {
     width: auto;
     height: 70%;
     align-self: center;
+    cursor: pointer;
 }
 
 .searchbar {
     grid-column: 2 / 14;
-    background-color: rgb(235, 225, 225);
+    background-color: var(--lightgray-color);
     border-radius: 10px;
     border: 0;
     width: 100%;
     height: 60%;
+    padding-left: 1%;
 }
 
 .profile-pic {
     border-radius: 50%;
-    border: 2px solid lightseagreen;
+    border: 3px solid lightseagreen;
     box-shadow: 0 0 20px lightgreen;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .profile-pic img {
@@ -117,6 +238,7 @@ main {
     grid-column: -5 / -2;
     font-size: large;
     justify-self: start;
+    cursor: pointer;
 }
 
 .header-bottom {
@@ -152,4 +274,5 @@ main {
     border: var(--sidebar-color);
     font-weight: 600;
     font-size: large;
+    cursor: pointer;
 }
