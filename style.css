@@ -20,7 +20,7 @@ html, body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 20%);
 }
 
 .sidebar {
@@ -37,12 +37,28 @@ header {
     background-color: white;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
-    padding: 20px;
+    padding: 10px;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 30% 70%;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
     gap: 10px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 6fr 4fr;
+    grid-template-rows: 100%;
+    align-items: center;
+    gap: 20px;
 }
 
 main {
@@ -194,15 +210,6 @@ main > div {
     cursor: auto;
 }
 
-.header-top {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
-}
-
 .icon {
     width: auto;
     height: 70%;
@@ -226,6 +233,7 @@ main > div {
     box-shadow: 0 0 20px lightgreen;
     overflow: hidden;
     cursor: pointer;
+    height: 100%;
 }
 
 .profile-pic img {
@@ -239,14 +247,6 @@ main > div {
     font-size: large;
     justify-self: start;
     cursor: pointer;
-}
-
-.header-bottom {
-    display: grid;
-    grid-template-columns: 1fr 6fr 4fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    gap: 20px;
 }
 
 .profile-pic-bottom {
