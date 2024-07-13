@@ -1,9 +1,10 @@
 # AdminDashboard
 [The Odin Project] Admin Dashboard project using HTML, CSS and JS.
 
-Live Preview: https://reyesvictor1.github.io/AdminDashboard/
+# Live Preview: https://reyesvictor1.github.io/AdminDashboard/
+![image](https://github.com/user-attachments/assets/68fd41c0-f092-425a-813b-8eac5416fc90)
 
-Image credits:
+# Image credits:
 
 - [Icon by Good Ware: eagle](https://www.freepik.com/icon/eagle_5980626#fromView=search&page=1&position=11&uuid=1dcdcc09-9004-4482-82d2-46b0c18ae115)
 - [Icon by Freepik: tiger](https://www.freepik.com/icon/tiger_685062#fromView=search&page=1&position=44&uuid=a7771fb5-7548-433a-8a8d-2e35729e36e6)
